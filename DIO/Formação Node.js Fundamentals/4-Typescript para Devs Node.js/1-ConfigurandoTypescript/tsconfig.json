@@ -1,0 +1,10 @@
+{
+
+  "compilerOptions": {
+    "target": "es6",//é as boas praticas que é pra seguir na hora do transpice
+    "module": "commonjs",
+    "outDir": "./dist",//diretorio onde os arquivos irao ficar
+    "strict": true, // Ativa TODAS as verificações rigorosas
+    "esModuleInterop": true  //  Compatibilidade com módulos ES6
+  }
+}

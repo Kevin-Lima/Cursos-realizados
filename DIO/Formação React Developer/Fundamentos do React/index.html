@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeira página</title>
     <style>
+        
+        body{
+            background-color: blue;
+        }
+
         .flex{
             display: flex;
         }
@@ -16,6 +21,32 @@
             align-items: center;
             justify-content: center;
             color: white;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .item:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .item:nth-child(1):hover{
+            background-color: blue;
+        }
+
+        input:focus{
+            border-color: red;
+            background-color: beige;
+        }
+
+         @media (max-width: 450px){
+            body{
+                background-color: coral;
+            }
+
+            .flex{
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -27,6 +58,10 @@
         <dib class="item">a</dib>
         <dib class="item">b</dib>
         <dib class="item">c</dib>
+    </div>
+
+    <div>
+        <input type="text">
     </div>
 
 </body>
